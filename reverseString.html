@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- Exercise 7.23 Reverse String -->
+<!-- Build a web page for the String Reversal function -->
+<!-- Dovi Wilensky, CS81, 24Jul2016 -->
+
+<html>
+	<head>
+		<title>Reverse String</title>
+		<script type="text/javascript">
+        function reverse(str) {
+            for (var i = str.length - 1, o = ''; i >= 0; o += str[i--]) {
+			}
+        return o;
+        }				
+		</script>
+	</head>
+    <!-- should have a single input box and a button named 'Reverse'--> 
+	<body>
+        <h1>Enter a string to be reversed</h1>
+	    <form name="thisForm">
+	        <input name=string rows=5 cols=90>
+            </input><br>
+            <!-- clicking the button should cause the text input box to be replaced with the reversal of its current content--> 
+            <input type = button value = "Reverse" onClick="document.thisForm.string.value = reverse(document.thisForm.string.value)";>
+		</form>
+	</body>
+</html>
